@@ -1,0 +1,2167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping in Pakistan</title>
+    <link rel="shortcut icon" href="F:\cooding learning\DARAZ\d2.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6b1224f2e2.js" crossorigin="anonymous"></script>
+<style>
+  body{
+    background-color: rgb(245, 245, 245);
+  }
+  .maincontainer1{
+    max-width: 1180px;
+  
+    
+    margin-left: 80px;
+  }
+  .d-flex{
+ width: 700px;
+ height: 38px;
+ margin-top: 10px;
+
+ margin-left: 30px;
+ 
+ 
+}
+.form-control{
+  border:#ffffff;
+  border-radius: 10px;
+}
+.nav1{
+  display: flex;
+  margin-top: 5px;
+}
+.login{
+  margin-top: 20px;
+  margin-left: 20px;
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+.nav-item{
+  margin-top: 20px;
+  
+}
+.dropdown-menu li{
+  margin-left: 20px;
+}
+.icon{
+  font-size: 18px;
+  color: white;
+}
+.bigicon{
+  font-size: 25px;
+  color: white;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.up{
+  display: flex;
+  
+  
+}
+.up-1 a{
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+  font-family: sans-serif;
+  padding-left: 15px;
+  cursor: pointer;
+}
+.up-2{
+  margin-left: 490px;
+  background-color: #ad3c04 ;
+  border-radius: 5px;
+  color: #ffffff;
+  width: 125px;
+  font-size: 12PX;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+.up-2 img{
+margin-left: 5px;
+}
+.cardlist {
+            background-color: white;
+            width: 240px;
+            border-radius: 10px;
+            margin-top: 10px;
+            height: 408px;
+            float: left;
+            position: relative;
+            padding-left: 10px;
+            padding-top: 12px;
+        }
+
+        .cardlist a i {
+            padding-right: 10px;
+        }
+
+        .cardlist a:hover::after { 
+            content: '>';
+            float: right;
+            margin-right: 10px;
+            font-size: 23px;
+        }
+
+        .cardlist a:hover {
+            color: orangered;
+            background-color: #F5F5F5;
+        }
+
+        .cardlist a {
+            text-decoration: none;
+            color: grey;
+            font-size: 14px;
+            list-style-type: none;
+            height: 30px;
+            display: block;
+            margin-right: 10px;
+        }
+
+        .cardlist1 {
+            background-color: white;
+            width: 240px;
+            display: none;
+            border-radius: 10px;
+            height: 409px;
+            padding-left: 20px;
+            padding-top: 1px;
+            margin-left: 240px;
+position: absolute;
+            bottom: 0.5px;
+            z-index: 11111111;
+            animation: fadeIn 1s;
+ 
+        }
+
+        .cardlist .a1:hover ~ .cardlist1, 
+        .cardlist1:hover {
+            display: block;
+        }
+
+        .cardlist1 .one-a:hover::after { 
+            content: '>';
+            float: right;
+            font-size: 23px;
+        }
+
+        .cardlist1 .one-a:hover {
+            color: orangered;
+            background-color: #F5F5F5;
+        }
+
+        .cardlist1 .one-a {
+            text-decoration: none;
+            color: grey;
+            font-size: 14px;
+            list-style-type: none;
+            height: 30px;
+            display: block;
+            margin-right: 10px;
+        }
+
+        .col-1 {
+            width: 120px;
+            margin-left: 8px;
+        }
+
+        .row {
+            margin-left: 5px;
+        }
+
+        .model {
+            width: 690px;
+            height: 408px;
+            background-color: #FFFFFF;
+            display: none;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            position: absolute;
+            left: 96%;
+            top: 0;
+        
+            background-color: rgb(255, 255, 255);
+            box-shadow: 1px 1px 2px 2px rgb(160, 157, 157);
+            animation: fadeIn 1s;
+        }
+
+        .h5 {
+            font-size: 13px;
+            color: grey;
+        text-align: center;
+        }
+
+        .h5:hover {
+            color: orangered;
+            cursor: pointer;
+        }
+
+        .cardlist1 .one-a:hover ~ .model, 
+        .model:hover {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+#carouselExampleAutoplaying{
+  float: left;
+  width: 920px;
+  height: 400px;
+  margin-left: 250px;
+  margin-top: 10px;
+  border-radius: 10px;
+position: absolute; 
+
+}
+#carouselExampleAutoplaying img{
+  width: 920px;
+  height: 400px;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.linkline{
+  clear: both;
+  width: 100%;
+ 
+  padding-top: 6px;
+  padding-bottom: 6px;
+  float: left;
+  margin-top: 23px;
+
+  background-color: antiquewhite;
+  
+}
+.linkline:hover{
+  background-color: peachpuff;
+}
+.linkline a{
+  color: black;
+  padding-left: 30px;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: capitalize;
+  
+
+}
+.bigimg{
+  height: 170px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 20px;
+
+
+}
+h4{
+  text-transform: capitalize;
+  margin-top: 20px;
+  font-size: 22px;
+  color: #454545;
+}
+
+.cart{
+  margin-left: 1px;
+}
+.card1{
+    width:161px;
+border: 2px solid rgb(245, 245, 245)  ;
+border-bottom:rgb(245, 245, 245) ;    
+cursor: pointer;
+
+
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px grey;
+}    
+.card{
+    width: 163px;
+    height: 160px;
+    
+    font-size: 15px;
+border: none;
+
+}
+
+.card p{
+    text-align: center;
+    padding-top: 10px;
+}
+.card img{
+padding-top: 10px;
+    width: 100px;
+height: 100px;
+margin-left: 30px;
+
+}
+
+
+
+.flashrow1{
+
+  height: 50px;
+  width: 100%;
+ 
+  background-color: white;
+  margin-top: 10px;
+}
+.rol2{
+  display: flex;
+  
+  width: 250px;
+  height: 50px;
+  padding: 10px;
+  float: left;
+  color: black;
+  text-transform: capitalize;
+}
+.time{
+  background-color: orangered;
+  width: 30px;
+  color: white;
+  text-align: center;
+  margin-left: 10px;
+
+}
+.rol1{
+
+  height: 50px;
+  color: orangered;
+  text-transform: capitalize;
+  padding: 10px;
+  width: 150px;
+  float: left;
+}
+.rol3{
+
+ 
+  margin-left: 620px;
+  text-align: center;
+  padding-top: 3px;
+  width: 140px;
+  height: 50px;
+  float: left;
+}
+
+.btnflash{
+  text-align: center;
+  border: 2px solid orangered;
+  width: 110px;
+  height: 40px;
+   text-transform: capitalize;
+  color: orangered;
+  background-color: white;
+
+}
+.btnflash:hover{
+  background-color: orangered;
+  color: white;
+}
+
+
+.flashitem{
+  /* border: 2px solid orangered; */
+  height: 330px;
+  width: 1175px;
+  display: grid;
+  grid-template-columns: repeat(6, 174px);
+  grid-template-rows: 250px;
+  gap: 23px;
+  margin-top: 2px;
+  position: absolute;
+  background-color: white;
+}
+.sale-item{
+   width: 185px;
+   height: 315px;
+   background-color: white;
+   margin-left: 5px;
+   /* border: 2px solid green; */
+}
+.sale-item:hover{
+  box-shadow: 1px 1px 1px 1px grey;
+  cursor: pointer;
+}
+.sale-item img{
+  height: 200px;
+}
+
+
+
+
+.foryou{
+ 
+  height: 350px;
+  width: 100%px;
+  
+  display: grid;
+  grid-template-columns: repeat(6, 174px);
+  grid-template-rows: 250px;
+  gap: 22px;
+  margin-left: 5px;
+  margin-top: 2px;
+}
+.sale-item1{
+   width: 185px;
+   height: 330px;   background-color: white;
+ 
+
+}
+.sale-item1:hover{
+  box-shadow: 1px 1px 1px 1px grey;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+.stline{
+ color: #454545;
+
+}
+.name{
+  font-size: 14px;
+  text-transform: capitalize;
+  margin-top: 10px;
+  margin-left: 8px;
+  
+}
+.price{
+   font-size: 20px;
+   font-weight: 400;
+   color: orangered;
+   
+
+}
+.strike{
+  font-size: 12px;   
+  color: #9e9e9e;
+}
+.star{
+color: #FACA51; 
+font-size: 15px; 
+ 
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btnlast{
+  text-align: center;
+  border: 2px solid orangered;
+  width: 450px;
+  margin-left: 380px;
+  height: 45px;
+  color: orangered;
+  background-color: rgb(245, 245, 245);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.btnlast:hover{
+  background-color: orangered;
+  color: white;
+}
+
+.secondlast{
+
+  width: 100%;
+  height: 400px;
+  
+  display: flex;
+  gap: 90px;
+}
+.sl{
+
+  width: 300px;
+  height: 100%;
+  
+}
+
+
+h5{
+  color: orangered;
+  text-transform: capitalize;
+}
+pre{
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #454545;
+  text-transform: capitalize;
+  font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+}
+.last{
+  width: 100%;
+  height: 960px;
+ background-color: rgb(241, 241, 241);
+
+  margin-top: 60px;
+
+
+}
+.para{
+ 
+  width: 250px;
+  height: 100%;
+  float: left;
+  margin-left: 30px;
+}
+
+  .carousel-control-next{
+ 
+  padding-left: 110px;
+
+
+  }
+  .carousel-control-next-icon{
+  
+  height: 60px;
+  width: 20px;
+  background-color: #454545;
+  }
+  .carousel-control-prev{
+
+  padding-right: 110px;
+
+  }
+  .carousel-control-prev-icon{
+      height: 60px;
+  width: 20px;
+  background-color: #454545;
+  }
+  .massage{
+  height: 60px;
+  width: 70px;
+  font-size: 14px;
+  font-family: sans-serif;
+  text-align: center;
+  margin-bottom: 80px;
+  margin-left: 1270px;
+  box-shadow: 2px 2px 2px 2px #454545;
+  background-color: #ffffff;
+  position: fixed;
+ }
+ .massage i{ font-size: 20px;}
+.gl{
+  margin-top: 20px;
+  color: white;
+  font-size: 20px;
+  margin-left: 15px;
+}
+</style>
+
+</head>
+<body>
+    <div class="container-fluid" style="background-color: orangered;">
+      <div class="container-xxl">
+        <div class="maincontainer1">
+          <div class="up">
+            <div class="up-1">
+              <a class="up-a">become a seller</a>
+              <a class="up-a">daraz affliate program</a>
+              <a class="up-a">help & support</a>
+              <a class="up-a">daraz logistic partner</a>
+            </div>
+            <div class="up-2">
+              <img src="F:\cooding learning\DARAZ\d2.png" width="20px" height="20px"> &nbsp;Save Me More
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+     <div class="container-fluid" style="background-color: orangered; height: 70px;">
+     <div class="container-xxl">
+      <div class="maincontainer1">
+        <nav class="nav1">
+         <a class="navname"><img src="F:\cooding learning\DARAZ\darazmain.png" width="125px" height="50px"></a>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search in daraz" aria-label="Search">
+              
+            </form>
+          <a class="login"><i class=" fa fa-thin fa-user fa-flip icon"></i> &nbsp;log in &nbsp;|</a>
+          <a class="login">sign up</a> <br>
+          <i class="fa-solid fa-globe gl"></i> &nbsp;  
+          <select style=" background-color: orangered;border: 2px solid orangered; height: 30px; margin-top: 14px;width: 50PX;color: white;
+          font-family: sans-serif;font-size: 12px; font-weight: bold; ">
+          
+            <option selected>EN</option>
+            <option value="">Engl</option>
+            <option value="">Urdu</option>
+          </select>
+          <i class="fa fa-thin fa-cart-shopping fa-bounce bigicon"></i>
+        </nav>
+      </div>
+    </div>
+     </div>
+    </div>
+      <div class="container-xxl">
+      <div class="maincontainer1">
+        <div class="col-3 list">
+          <div class="cardlist">
+              <a href="#" class="a1"><i class="fa-solid fa-cart-shopping"></i>groceries & pets
+                  <div class="cardlist1">
+                      <a href="#" class="one-a">groceries & pets</a>
+                      <a href="#" class="one-a">health & beauty</a>
+                      <a href="#" class="one-a">men's fashion</a>
+                      <a href="#" class="one-a">women's fashion</a>
+                      <a href="#" class="one-a">women's fashion</a>
+                      <a href="#" class="one-a">mother & baby</a>
+                      <a href="#" class="one-a">home & lifestyle</a>
+                      <a href="#" class="one-a">electronic devices</a>
+                      <a href="#" class="one-a">electronic accessories</a>
+                      <a href="#" class="one-a">tv & home appliances</a>
+                      <a href="#" class="one-a">sports & outdoor</a>
+                      <a href="#" class="one-a">watches, bags & jewellery</a>
+                      <a href="#" class="one-a">automotive and motorbike</a>
+                      <div class="model">
+                          <h1 style="font-size: 16px; padding-left: 15px;">Breakfast Choco and Snacks</h1>
+                          <br>
+                          <div class="row">
+                              <div class="col-1"><img src="F:\cooding learning\DARAZ\milk 3.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Breakfast Cereals</h5>
+                              </div>
+                              <div class="col-1"><img src="jh.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Jam Honey & Spreads</h5></div>
+                              <div class="col-1"><img src="bbr.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Breakfast Bars</h5></div>
+                              <div class="col-1"><img src="bd.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Instant Breakfast Drinks</h5></div>
+                              <div class="col-1"><img src="cc.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chocolate & candy</h5></div>
+                          </div>
+                          <br>
+                          <div class="row">
+                              <div class="col-1"><img src="cg.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chewing Gums & Mints</h5>
+                              </div>
+                              <div class="col-1"><img src="cs.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Biscuit & Cookies</h5></div>
+                              <div class="col-1"><img src="nuts.avif" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Nuts & Legumes</h5></div>
+                              <div class="col-1"><img src="ccr.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chips & Crisps</h5></div>
+                              <div class="col-1"><img src="bk.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Cakes & Sweets</h5></div>
+                          </div>
+                          <br> 
+                          <div class="row">
+                              <div class="col-1">
+                                  <img src="ot.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Oatmeals</h5>
+                              </div>
+                              <div class="col-1"><img src="pw.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Pancake & Waffle Mixes</h5></div>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+              <a href="#" class="a1"><i class="fa-solid fa-notes-medical"></i>health & beauty     <div class="cardlist1">
+                      <a href="#" class="one-a">groceries </a>
+                      <a href="#" class="one-a">health & beauty</a>
+                      <a href="#" class="one-a">men's fashion</a>
+                      <a href="#" class="one-a">women's fashion</a>
+                      <a href="#" class="one-a">women's fashion</a>
+                      <a href="#" class="one-a">mother & baby</a>
+                      <a href="#" class="one-a">home & lifestyle</a>
+                      <a href="#" class="one-a">electronic devices</a>
+                      <a href="#" class="one-a">electronic accessories</a>
+                      <a href="#" class="one-a">tv & home appliances</a>
+                      <a href="#" class="one-a">sports & outdoor</a>
+                      <a href="#" class="one-a">watches, bags & jewellery</a>
+                      <a href="#" class="one-a">automotive and motorbike</a>
+                      <div class="model">
+                          <h1 style="font-size: 16px; padding-left: 15px;">Breakfast Choco and Snacks</h1>
+                          <br>
+                          <div class="row">
+                              <div class="col-1"><img src="bc.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Breakfast Cereals</h5>
+                              </div>
+                              <div class="col-1"><img src="jh.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Jam Honey & Spreads</h5></div>
+                              <div class="col-1"><img src="bbr.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Breakfast Bars</h5></div>
+                              <div class="col-1"><img src="bd.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Instant Breakfast Drinks</h5></div>
+                              <div class="col-1"><img src="cc.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chocolate & candy</h5></div>
+                          </div>
+                          <br>
+                          <div class="row">
+                              <div class="col-1"><img src="cg.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chewing Gums & Mints</h5>
+                              </div>
+                              <div class="col-1"><img src="cs.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Biscuit & Cookies</h5></div>
+                              <div class="col-1"><img src="nuts.avif" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Nuts & Legumes</h5></div>
+                              <div class="col-1"><img src="ccr.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chips & Crisps</h5></div>
+                              <div class="col-1"><img src="bk.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Cakes & Sweets</h5></div>
+                          </div>
+                          <br> 
+                          <div class="row">
+                              <div class="col-1">
+                                  <img src="ot.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Oatmeals</h5>
+                              </div>
+                              <div class="col-1"><img src="pw.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Pancake & Waffle Mixes</h5></div>
+                          </div>
+                      </div>
+                  </div></a>
+              <a href="#" class="a1"><i class="fa-solid fa-shirt"></i>men's fashion               <div class="cardlist1">
+                      <a href="#" class="one-a">groceries & pets</a>
+                      <a href="#" class="one-a">health & beauty</a>
+                      <a href="#" class="one-a">men's fashion</a>
+                      <a href="#" class="one-a">women's fashion</a>
+                      <a href="#" class="one-a">women's fashion</a>
+                      <a href="#" class="one-a">mother & baby</a>
+                      <a href="#" class="one-a">home & lifestyle</a>
+                      <a href="#" class="one-a">electronic devices</a>
+                      <a href="#" class="one-a">electronic accessories</a>
+                      <a href="#" class="one-a">tv & home appliances</a>
+                      <a href="#" class="one-a">sports & outdoor</a>
+                      <a href="#" class="one-a">watches, bags & jewellery</a>
+                      <a href="#" class="one-a">automotive and motorbike</a>
+                      <div class="model">
+                          <h1 style="font-size: 16px; padding-left: 15px;">Breakfast Choco and Snacks</h1>
+                          <br>
+                          <div class="row">
+                              <div class="col-1"><img src="bc.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Breakfast Cereals</h5>
+                              </div>
+                              <div class="col-1"><img src="jh.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Jam Honey & Spreads</h5></div>
+                              <div class="col-1"><img src="bbr.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Breakfast Bars</h5></div>
+                              <div class="col-1"><img src="bd.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Instant Breakfast Drinks</h5></div>
+                              <div class="col-1"><img src="cc.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chocolate & candy</h5></div>
+                          </div>
+                          <br>
+                          <div class="row">
+                              <div class="col-1"><img src="cg.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chewing Gums & Mints</h5>
+                              </div>
+                              <div class="col-1"><img src="cs.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Biscuit & Cookies</h5></div>
+                              <div class="col-1"><img src="nuts.avif" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Nuts & Legumes</h5></div>
+                              <div class="col-1"><img src="ccr.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chips & Crisps</h5></div>
+                              <div class="col-1"><img src="bk.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Cakes & Sweets</h5></div>
+                          </div>
+                          <br> 
+                          <div class="row">
+                              <div class="col-1">
+                                  <img src="ot.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Oatmeals</h5>
+                              </div>
+                              <div class="col-1"><img src="pw.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Pancake & Waffle Mixes</h5></div>
+                          </div>
+                      </div>
+                  </div></a>
+              <a href="#" class="a1"><i class="fa-solid fa-shirt"></i>women's fashion             <div class="cardlist1">
+                      <a href="#" class="one-a">groceries & pets</a>
+                      <a href="#" class="one-a">health & beauty</a>
+                      <a href="#" class="one-a">men's fashion</a>
+                      <a href="#" class="one-a">women's fashion</a>
+                      <a href="#" class="one-a">women's fashion</a>
+                      <a href="#" class="one-a">mother & baby</a>
+                      <a href="#" class="one-a">home & lifestyle</a>
+                      <a href="#" class="one-a">electronic devices</a>
+                      <a href="#" class="one-a">electronic accessories</a>
+                      <a href="#" class="one-a">tv & home appliances</a>
+                      <a href="#" class="one-a">sports & outdoor</a>
+                      <a href="#" class="one-a">watches, bags & jewellery</a>
+                      <a href="#" class="one-a">automotive and motorbike</a>
+                      <div class="model">
+                          <h1 style="font-size: 16px; padding-left: 15px;">Breakfast Choco and Snacks</h1>
+                          <br>
+                          <div class="row">
+                              <div class="col-1"><img src="bc.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Breakfast Cereals</h5>
+                              </div>
+                              <div class="col-1"><img src="jh.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Jam Honey & Spreads</h5></div>
+                              <div class="col-1"><img src="bbr.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Breakfast Bars</h5></div>
+                              <div class="col-1"><img src="bd.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Instant Breakfast Drinks</h5></div>
+                              <div class="col-1"><img src="cc.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chocolate & candy</h5></div>
+                          </div>
+                          <br>
+                          <div class="row">
+                              <div class="col-1"><img src="cg.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chewing Gums & Mints</h5>
+                              </div>
+                              <div class="col-1"><img src="cs.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Biscuit & Cookies</h5></div>
+                              <div class="col-1"><img src="nuts.avif" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Nuts & Legumes</h5></div>
+                              <div class="col-1"><img src="ccr.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chips & Crisps</h5></div>
+                              <div class="col-1"><img src="bk.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Cakes & Sweets</h5></div>
+                          </div>
+                          <br> 
+                          <div class="row">
+                              <div class="col-1">
+                                  <img src="ot.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Oatmeals</h5>
+                              </div>
+                              <div class="col-1"><img src="pw.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Pancake & Waffle Mixes</h5></div>
+                          </div>
+                      </div>
+                  </div></a>
+              <a href="#" class="a1"><i class="fa-solid fa-shirt"></i>women's fashion             <div class="cardlist1">
+                      <a href="#" class="one-a">groceries & pets</a>
+                      <a href="#" class="one-a">health & beauty</a>
+                      <a href="#" class="one-a">men's fashion</a>
+                      <a href="#" class="one-a">women's fashion</a>
+                      <a href="#" class="one-a">women's fashion</a>
+                      <a href="#" class="one-a">mother & baby</a>
+                      <a href="#" class="one-a">home & lifestyle</a>
+                      <a href="#" class="one-a">electronic devices</a>
+                      <a href="#" class="one-a">electronic accessories</a>
+                      <a href="#" class="one-a">tv & home appliances</a>
+                      <a href="#" class="one-a">sports & outdoor</a>
+                      <a href="#" class="one-a">watches, bags & jewellery</a>
+                      <a href="#" class="one-a">automotive and motorbike</a>
+                      <div class="model">
+                          <h1 style="font-size: 16px; padding-left: 15px;">Breakfast Choco and Snacks</h1>
+                          <br>
+                          <div class="row">
+                              <div class="col-1"><img src="bc.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Breakfast Cereals</h5>
+                              </div>
+                              <div class="col-1"><img src="jh.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Jam Honey & Spreads</h5></div>
+                              <div class="col-1"><img src="bbr.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Breakfast Bars</h5></div>
+                              <div class="col-1"><img src="bd.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Instant Breakfast Drinks</h5></div>
+                              <div class="col-1"><img src="cc.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chocolate & candy</h5></div>
+                          </div>
+                          <br>
+                          <div class="row">
+                              <div class="col-1"><img src="cg.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chewing Gums & Mints</h5>
+                              </div>
+                              <div class="col-1"><img src="cs.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Biscuit & Cookies</h5></div>
+                              <div class="col-1"><img src="nuts.avif" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Nuts & Legumes</h5></div>
+                              <div class="col-1"><img src="ccr.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chips & Crisps</h5></div>
+                              <div class="col-1"><img src="bk.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Cakes & Sweets</h5></div>
+                          </div>
+                          <br> 
+                          <div class="row">
+                              <div class="col-1">
+                                  <img src="ot.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Oatmeals</h5>
+                              </div>
+                              <div class="col-1"><img src="pw.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Pancake & Waffle Mixes</h5></div>
+                          </div>
+                      </div>
+                  </div></a>
+              <a href="#" class="a1"><i class="fa-solid fa-shirt"></i>mother & baby               <div class="cardlist1">
+                      <a href="#" class="one-a">groceries & pets</a>
+                      <a href="#" class="one-a">health & beauty</a>
+                      <a href="#" class="one-a">men's fashion</a>
+                      <a href="#" class="one-a">women's fashion</a>
+                      <a href="#" class="one-a">women's fashion</a>
+                      <a href="#" class="one-a">mother & baby</a>
+                      <a href="#" class="one-a">home & lifestyle</a>
+                      <a href="#" class="one-a">electronic devices</a>
+                      <a href="#" class="one-a">electronic accessories</a>
+                      <a href="#" class="one-a">tv & home appliances</a>
+                      <a href="#" class="one-a">sports & outdoor</a>
+                      <a href="#" class="one-a">watches, bags & jewellery</a>
+                      <a href="#" class="one-a">automotive and motorbike</a>
+                      <div class="model">
+                          <h1 style="font-size: 16px; padding-left: 15px;">Breakfast Choco and Snacks</h1>
+                          <br>
+                          <div class="row">
+                              <div class="col-1"><img src="bc.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Breakfast Cereals</h5>
+                              </div>
+                              <div class="col-1"><img src="jh.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Jam Honey & Spreads</h5></div>
+                              <div class="col-1"><img src="bbr.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Breakfast Bars</h5></div>
+                              <div class="col-1"><img src="bd.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Instant Breakfast Drinks</h5></div>
+                              <div class="col-1"><img src="cc.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chocolate & candy</h5></div>
+                          </div>
+                          <br>
+                          <div class="row">
+                              <div class="col-1"><img src="cg.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chewing Gums & Mints</h5>
+                              </div>
+                              <div class="col-1"><img src="cs.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Biscuit & Cookies</h5></div>
+                              <div class="col-1"><img src="nuts.avif" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Nuts & Legumes</h5></div>
+                              <div class="col-1"><img src="ccr.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chips & Crisps</h5></div>
+                              <div class="col-1"><img src="bk.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Cakes & Sweets</h5></div>
+                          </div>
+                          <br> 
+                          <div class="row">
+                              <div class="col-1">
+                                  <img src="ot.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Oatmeals</h5>
+                              </div>
+                              <div class="col-1"><img src="pw.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Pancake & Waffle Mixes</h5></div>
+                          </div>
+                      </div>
+                  </div></a>
+              <a href="#" class="a1"><i class="fa-solid fa-car"></i>home & lifestyle              <div class="cardlist1">
+                      <a href="#" class="one-a">groceries</a>
+                      <a href="#" class="one-a">health & beauty</a>
+                      <a href="#" class="one-a">men's fashion</a>
+                      <a href="#" class="one-a">women's fashion</a>
+                      <a href="#" class="one-a">women's fashion</a>
+                      <a href="#" class="one-a">mother & baby</a>
+                      <a href="#" class="one-a">home & lifestyle</a>
+                      <a href="#" class="one-a">electronic devices</a>
+                      <a href="#" class="one-a">electronic accessories</a>
+                      <a href="#" class="one-a">tv & home appliances</a>
+                      <a href="#" class="one-a">sports & outdoor</a>
+                      <a href="#" class="one-a">watches, bags & jewellery</a>
+                      <a href="#" class="one-a">automotive and motorbike</a>
+                      <div class="model">
+                          <h1 style="font-size: 16px; padding-left: 15px;">Breakfast Choco and Snacks</h1>
+                          <br>
+                          <div class="row">
+                              <div class="col-1"><img src="bc.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Breakfast Cereals</h5>
+                              </div>
+                              <div class="col-1"><img src="jh.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Jam Honey & Spreads</h5></div>
+                              <div class="col-1"><img src="bbr.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Breakfast Bars</h5></div>
+                              <div class="col-1"><img src="bd.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Instant Breakfast Drinks</h5></div>
+                              <div class="col-1"><img src="cc.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chocolate & candy</h5></div>
+                          </div>
+                          <br>
+                          <div class="row">
+                              <div class="col-1"><img src="cg.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chewing Gums & Mints</h5>
+                              </div>
+                              <div class="col-1"><img src="cs.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Biscuit & Cookies</h5></div>
+                              <div class="col-1"><img src="nuts.avif" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Nuts & Legumes</h5></div>
+                              <div class="col-1"><img src="ccr.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chips & Crisps</h5></div>
+                              <div class="col-1"><img src="bk.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Cakes & Sweets</h5></div>
+                          </div>
+                          <br> 
+                          <div class="row">
+                              <div class="col-1">
+                                  <img src="ot.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Oatmeals</h5>
+                              </div>
+                              <div class="col-1"><img src="pw.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Pancake & Waffle Mixes</h5></div>
+                          </div>
+                      </div>
+                  </div></a>
+              <a href="#" class="a1"><i class="fa-solid fa-atom"></i>electronic devices           <div class="cardlist1">
+                      <a href="#" class="one-a">groceries & pets</a>
+                      <a href="#" class="one-a">health & beauty</a>
+                      <a href="#" class="one-a">men's fashion</a>
+                      <a href="#" class="one-a">women's fashion</a>
+                      <a href="#" class="one-a">women's fashion</a>
+                      <a href="#" class="one-a">mother & baby</a>
+                      <a href="#" class="one-a">home & lifestyle</a>
+                      <a href="#" class="one-a">electronic devices</a>
+                      <a href="#" class="one-a">electronic accessories</a>
+                      <a href="#" class="one-a">tv & home appliances</a>
+                      <a href="#" class="one-a">sports & outdoor</a>
+                      <a href="#" class="one-a">watches, bags & jewellery</a>
+                      <a href="#" class="one-a">automotive and motorbike</a>
+                      <div class="model">
+                          <h1 style="font-size: 16px; padding-left: 15px;">Breakfast Choco and Snacks</h1>
+                          <br>
+                          <div class="row">
+                              <div class="col-1"><img src="bc.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Breakfast Cereals</h5>
+                              </div>
+                              <div class="col-1"><img src="jh.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Jam Honey & Spreads</h5></div>
+                              <div class="col-1"><img src="bbr.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Breakfast Bars</h5></div>
+                              <div class="col-1"><img src="bd.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Instant Breakfast Drinks</h5></div>
+                              <div class="col-1"><img src="cc.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chocolate & candy</h5></div>
+                          </div>
+                          <br>
+                          <div class="row">
+                              <div class="col-1"><img src="cg.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chewing Gums & Mints</h5>
+                              </div>
+                              <div class="col-1"><img src="cs.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Biscuit & Cookies</h5></div>
+                              <div class="col-1"><img src="nuts.avif" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Nuts & Legumes</h5></div>
+                              <div class="col-1"><img src="ccr.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chips & Crisps</h5></div>
+                              <div class="col-1"><img src="bk.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Cakes & Sweets</h5></div>
+                          </div>
+                          <br> 
+                          <div class="row">
+                              <div class="col-1">
+                                  <img src="ot.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Oatmeals</h5>
+                              </div>
+                              <div class="col-1"><img src="pw.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Pancake & Waffle Mixes</h5></div>
+                          </div>
+                      </div>
+                  </div></a>
+              <a href="#" class="a1"><i class="fa-solid fa-atom"></i>electronic accessories       <div class="cardlist1">
+                      <a href="#" class="one-a">groceries & pets</a>
+                      <a href="#" class="one-a">health & beauty</a>
+                      <a href="#" class="one-a">men's fashion</a>
+                      <a href="#" class="one-a">women's fashion</a>
+                      <a href="#" class="one-a">women's fashion</a>
+                      <a href="#" class="one-a">mother & baby</a>
+                      <a href="#" class="one-a">home & lifestyle</a>
+                      <a href="#" class="one-a">electronic devices</a>
+                      <a href="#" class="one-a">electronic accessories</a>
+                      <a href="#" class="one-a">tv & home appliances</a>
+                      <a href="#" class="one-a">sports & outdoor</a>
+                      <a href="#" class="one-a">watches, bags & jewellery</a>
+                      <a href="#" class="one-a">automotive and motorbike</a>
+                      <div class="model">
+                          <h1 style="font-size: 16px; padding-left: 15px;">Breakfast Choco and Snacks</h1>
+                          <br>
+                          <div class="row">
+                              <div class="col-1"><img src="bc.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Breakfast Cereals</h5>
+                              </div>
+                              <div class="col-1"><img src="jh.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Jam Honey & Spreads</h5></div>
+                              <div class="col-1"><img src="bbr.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Breakfast Bars</h5></div>
+                              <div class="col-1"><img src="bd.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Instant Breakfast Drinks</h5></div>
+                              <div class="col-1"><img src="cc.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chocolate & candy</h5></div>
+                          </div>
+                          <br>
+                          <div class="row">
+                              <div class="col-1"><img src="cg.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chewing Gums & Mints</h5>
+                              </div>
+                              <div class="col-1"><img src="cs.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Biscuit & Cookies</h5></div>
+                              <div class="col-1"><img src="nuts.avif" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Nuts & Legumes</h5></div>
+                              <div class="col-1"><img src="ccr.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chips & Crisps</h5></div>
+                              <div class="col-1"><img src="bk.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Cakes & Sweets</h5></div>
+                          </div>
+                          <br> 
+                          <div class="row">
+                              <div class="col-1">
+                                  <img src="ot.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Oatmeals</h5>
+                              </div>
+                              <div class="col-1"><img src="pw.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Pancake & Waffle Mixes</h5></div>
+                          </div>
+                      </div>
+                  </div></a>
+              <a href="#" class="a1"><i class="fa-solid fa-tv"></i>tv & home appliances           <div class="cardlist1">
+                      <a href="#" class="one-a">groceries & pets</a>
+                      <a href="#" class="one-a">health & beauty</a>
+                      <a href="#" class="one-a">men's fashion</a>
+                      <a href="#" class="one-a">women's fashion</a>
+                      <a href="#" class="one-a">women's fashion</a>
+                      <a href="#" class="one-a">mother & baby</a>
+                      <a href="#" class="one-a">home & lifestyle</a>
+                      <a href="#" class="one-a">electronic devices</a>
+                      <a href="#" class="one-a">electronic accessories</a>
+                      <a href="#" class="one-a">tv & home appliances</a>
+                      <a href="#" class="one-a">sports & outdoor</a>
+                      <a href="#" class="one-a">watches, bags & jewellery</a>
+                      <a href="#" class="one-a">automotive and motorbike</a>
+                      <div class="model">
+                          <h1 style="font-size: 16px; padding-left: 15px;">Breakfast Choco and Snacks</h1>
+                          <br>
+                          <div class="row">
+                              <div class="col-1"><img src="bc.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Breakfast Cereals</h5>
+                              </div>
+                              <div class="col-1"><img src="jh.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Jam Honey & Spreads</h5></div>
+                              <div class="col-1"><img src="bbr.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Breakfast Bars</h5></div>
+                              <div class="col-1"><img src="bd.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Instant Breakfast Drinks</h5></div>
+                              <div class="col-1"><img src="cc.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chocolate & candy</h5></div>
+                          </div>
+                          <br>
+                          <div class="row">
+                              <div class="col-1"><img src="cg.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chewing Gums & Mints</h5>
+                              </div>
+                              <div class="col-1"><img src="cs.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Biscuit & Cookies</h5></div>
+                              <div class="col-1"><img src="nuts.avif" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Nuts & Legumes</h5></div>
+                              <div class="col-1"><img src="ccr.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chips & Crisps</h5></div>
+                              <div class="col-1"><img src="bk.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Cakes & Sweets</h5></div>
+                          </div>
+                          <br> 
+                          <div class="row">
+                              <div class="col-1">
+                                  <img src="ot.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Oatmeals</h5>
+                              </div>
+                              <div class="col-1"><img src="pw.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Pancake & Waffle Mixes</h5></div>
+                          </div>
+                      </div>
+                  </div></a>
+              <a href="#" class="a1"><i class="fa-solid fa-medal"></i>sports & outdoor            <div class="cardlist1">
+                      <a href="#" class="one-a">groceries & pets</a>
+                      <a href="#" class="one-a">health & beauty</a>
+                      <a href="#" class="one-a">men's fashion</a>
+                      <a href="#" class="one-a">women's fashion</a>
+                      <a href="#" class="one-a">women's fashion</a>
+                      <a href="#" class="one-a">mother & baby</a>
+                      <a href="#" class="one-a">home & lifestyle</a>
+                      <a href="#" class="one-a">electronic devices</a>
+                      <a href="#" class="one-a">electronic accessories</a>
+                      <a href="#" class="one-a">tv & home appliances</a>
+                      <a href="#" class="one-a">sports & outdoor</a>
+                      <a href="#" class="one-a">watches, bags & jewellery</a>
+                      <a href="#" class="one-a">automotive and motorbike</a>
+                      <div class="model">
+                          <h1 style="font-size: 16px; padding-left: 15px;">Breakfast Choco and Snacks</h1>
+                          <br>
+                          <div class="row">
+                              <div class="col-1"><img src="bc.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Breakfast Cereals</h5>
+                              </div>
+                              <div class="col-1"><img src="jh.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Jam Honey & Spreads</h5></div>
+                              <div class="col-1"><img src="bbr.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Breakfast Bars</h5></div>
+                              <div class="col-1"><img src="bd.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Instant Breakfast Drinks</h5></div>
+                              <div class="col-1"><img src="cc.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chocolate & candy</h5></div>
+                          </div>
+                          <br>
+                          <div class="row">
+                              <div class="col-1"><img src="cg.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chewing Gums & Mints</h5>
+                              </div>
+                              <div class="col-1"><img src="cs.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Biscuit & Cookies</h5></div>
+                              <div class="col-1"><img src="nuts.avif" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Nuts & Legumes</h5></div>
+                              <div class="col-1"><img src="ccr.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chips & Crisps</h5></div>
+                              <div class="col-1"><img src="bk.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Cakes & Sweets</h5></div>
+                          </div>
+                          <br> 
+                          <div class="row">
+                              <div class="col-1">
+                                  <img src="ot.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Oatmeals</h5>
+                              </div>
+                              <div class="col-1"><img src="pw.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Pancake & Waffle Mixes</h5></div>
+                          </div>
+                      </div>
+                  </div></a>
+     <a href="#" class="a1"><i class="fa-solid fa-bag-shopping"></i>watches, bags & jewellery     <div class="cardlist1">
+                      <a href="#" class="one-a">groceries & pets</a>
+                      <a href="#" class="one-a">health & beauty</a>
+                      <a href="#" class="one-a">men's fashion</a>
+                      <a href="#" class="one-a">women's fashion</a>
+                      <a href="#" class="one-a">women's fashion</a>
+                      <a href="#" class="one-a">mother & baby</a>
+                      <a href="#" class="one-a">home & lifestyle</a>
+                      <a href="#" class="one-a">electronic devices</a>
+                      <a href="#" class="one-a">electronic accessories</a>
+                      <a href="#" class="one-a">tv & home appliances</a>
+                      <a href="#" class="one-a">sports & outdoor</a>
+                      <a href="#" class="one-a">watches, bags & jewellery</a>
+                      <a href="#" class="one-a">automotive and motorbike</a>
+                      <div class="model">
+                          <h1 style="font-size: 16px; padding-left: 15px;">Breakfast Choco and Snacks</h1>
+                          <br>
+                          <div class="row">
+                              <div class="col-1"><img src="bc.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Breakfast Cereals</h5>
+                              </div>
+                              <div class="col-1"><img src="jh.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Jam Honey & Spreads</h5></div>
+                              <div class="col-1"><img src="bbr.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Breakfast Bars</h5></div>
+                              <div class="col-1"><img src="bd.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Instant Breakfast Drinks</h5></div>
+                              <div class="col-1"><img src="cc.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chocolate & candy</h5></div>
+                          </div>
+                          <br>
+                          <div class="row">
+                              <div class="col-1"><img src="cg.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chewing Gums & Mints</h5>
+                              </div>
+                              <div class="col-1"><img src="cs.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Biscuit & Cookies</h5></div>
+                              <div class="col-1"><img src="nuts.avif" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Nuts & Legumes</h5></div>
+                              <div class="col-1"><img src="ccr.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Chips & Crisps</h5></div>
+                              <div class="col-1"><img src="bk.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Cakes & Sweets</h5></div>
+                          </div>
+                          <br> 
+                          <div class="row">
+                              <div class="col-1">
+                                  <img src="ot.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Oatmeals</h5>
+                              </div>
+                              <div class="col-1"><img src="pw.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                                  <h5 class="h5">Pancake & Waffle Mixes</h5></div>
+                          </div>
+                      </div>
+                  </div></a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+     
+  <a href="#" class="a1"><i class="fa-brands fa-watchman-monitoring"></i>automotive and motorbike     <div class="cardlist1">
+      <a href="#" class="one-a">groceries & pets</a>
+      <a href="#" class="one-a">health & beauty</a>
+      <a href="#" class="one-a">men's fashion</a>
+      <a href="#" class="one-a">women's fashion</a>
+      <a href="#" class="one-a">women's fashion</a>
+      <a href="#" class="one-a">mother & baby</a>
+      <a href="#" class="one-a">home & lifestyle</a>
+      <a href="#" class="one-a">electronic devices</a>
+      <a href="#" class="one-a">electronic accessories</a>
+      <a href="#" class="one-a">tv & home appliances</a>
+      <a href="#" class="one-a">sports & outdoor</a>
+      <a href="#" class="one-a">watches, bags & jewellery</a>
+      <a href="#" class="one-a">automotive and motorbike</a>
+      <div class="model">
+          <h1 style="font-size: 16px; padding-left: 15px;">Breakfast Choco and Snacks</h1>
+          <br>
+          <div class="row">
+              <div class="col-1"><img src="bc.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                  <h5 class="h5">Breakfast Cereals</h5>
+              </div>
+              <div class="col-1"><img src="jh.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                  <h5 class="h5">Jam Honey & Spreads</h5></div>
+              <div class="col-1"><img src="bbr.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                  <h5 class="h5">Breakfast Bars</h5></div>
+              <div class="col-1"><img src="bd.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                  <h5 class="h5">Instant Breakfast Drinks</h5></div>
+              <div class="col-1"><img src="cc.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                  <h5 class="h5">Chocolate & candy</h5></div>
+          </div>
+          <br>
+          <div class="row">
+              <div class="col-1"><img src="cg.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                  <h5 class="h5">Chewing Gums & Mints</h5>
+              </div>
+              <div class="col-1"><img src="cs.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                  <h5 class="h5">Biscuit & Cookies</h5></div>
+              <div class="col-1"><img src="nuts.avif" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                  <h5 class="h5">Nuts & Legumes</h5></div>
+              <div class="col-1"><img src="ccr.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                  <h5 class="h5">Chips & Crisps</h5></div>
+              <div class="col-1"><img src="bk.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                  <h5 class="h5">Cakes & Sweets</h5></div>
+          </div>
+          <br> 
+          <div class="row">
+              <div class="col-1">
+                  <img src="ot.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                  <h5 class="h5">Oatmeals</h5>
+              </div>
+              <div class="col-1"><img src="pw.jpg" alt="" style="width: 58px; height: 58px; border-radius: 50%; border: 1px solid grey; margin-left: 12px;">
+                  <h5 class="h5">Pancake & Waffle Mixes</h5></div>
+          </div>
+      </div>
+  </div></a>
+          </div>
+      </div>
+     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="F:\cooding learning\DARAZ\daraz3.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="F:\cooding learning\DARAZ\daraz2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="F:\cooding learning\DARAZ\daraz4.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="F:\cooding learning\DARAZ\man.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="F:\cooding learning\DARAZ\girl.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="F:\cooding learning\DARAZ\daraz5.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="F:\cooding learning\DARAZ\daraz6.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="F:\cooding learning\DARAZ\girldraz.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    
+    </div>
+    <br><br><br><br>
+   
+    <div class="linkline">
+      <a href="#"><img src="F:\cooding learning\DARAZ\sfae.png">&nbsp;&nbsp;safty payment &nbsp; |</a>
+      <a href="#"><img src="F:\cooding learning\DARAZ\delery.png">&nbsp;&nbsp;nationalwide delivery&nbsp; |</a>
+      <a href="#"><img src="F:\cooding learning\DARAZ\back.png">&nbsp;&nbsp;free & easy return &nbsp; |</a>
+      <a href="#"><img src="F:\cooding learning\DARAZ\pracice.png">&nbsp;&nbsp;best prices granted &nbsp; |</a>
+      <a href="#"><img src="F:\cooding learning\DARAZ\100%.png">&nbsp;&nbsp;100% authentic products &nbsp; |</a>
+      <a href="#"><img src="F:\cooding learning\DARAZ\daarzshoooo.png">&nbsp;&nbsp;daraz valid ></a>
+    </div>
+  
+
+<img  class="bigimg" src="F:\cooding learning\DARAZ\daraz3.jpg">
+
+<h4>Catagaries</h4>
+
+
+
+<div class="row cart">
+
+
+
+
+<div class="col-1 card1 ">
+  <div class="card">
+  <img src="F:\cooding learning\DARAZ\watch.jpg" class="card-img-top" alt="...">
+  <p>smart watches</p>
+</div>
+</div>
+
+<div class="col-1 card1 ">
+  <div class="card">
+  <img src="F:\cooding learning\DARAZ\vatem.jpg" class="card-img-top" alt="...">
+  <p>Wallpapers Design</p>
+</div>
+</div>
+
+<div class="col-1 card1 ">
+  <div class="card">
+  <img src="F:\cooding learning\DARAZ\headphone.jpg" class="card-img-top" alt="...">
+  <p>Airpods Pro</p>
+</div>
+</div>
+
+<div class="col-1 card1 ">
+  <div class="card">
+  <img src="F:\cooding learning\DARAZ\mosturizer.jpg" class="card-img-top" alt="...">
+  <p>Moscuriser Cream</p>
+</div>
+</div>
+
+<div class="col-1 card1 ">
+  <div class="card">
+  <img src="F:\cooding learning\DARAZ\serum.jpg" class="card-img-top" alt="...">
+  <p>Face Serums</p>
+</div>
+</div>
+<div class="col-1 card1 ">
+  <div class="card">
+  <img src="F:\cooding learning\DARAZ\pin.png" class="card-img-top" alt="...">
+  <p>Cable Pin</p>
+</div>
+</div>
+<div class="col-1 card1 ">
+  <div class="card">
+  <img src="F:\cooding learning\DARAZ\casual.jpg" class="card-img-top" alt="...">
+  <p>Casual</p>
+</div>
+</div>
+
+</div>
+
+
+<div class="row cart">
+
+
+  <div class="col-1 card1 ">
+    <div class="card">
+    <img src="F:\cooding learning\DARAZ\water.jpg" class="card-img-top" alt="...">
+    <p> Gravity Water Dispenser</p>
+  </div>
+  </div>
+  <div class="col-1 card1 ">
+    <div class="card">
+    <img src="F:\cooding learning\DARAZ\normalatch.jpg" class="card-img-top" alt="...">
+    <p>Fachion Watches</p>
+  </div>
+  </div>
+  <div class="col-1 card1 ">
+    <div class="card">
+    <img src="F:\cooding learning\DARAZ\hier.jpg" class="card-img-top" alt="...">
+    <p>Hair Accessories</p>
+  </div>
+  </div>
+  <div class="col-1 card1 ">
+    <div class="card">
+    <img src="F:\cooding learning\DARAZ\t-shit.jpg" class="card-img-top" alt="...">
+    <p>Branded T-Shirts</p>
+  </div>
+  </div>
+  <div class="col-1 card1 ">
+    <div class="card">
+    <img src="F:\cooding learning\DARAZ\ccap.jpg" class="card-img-top" alt="...">
+    <p>OldMoldel Caps</p>
+  </div>
+  </div>
+  <div class="col-1 card1 ">
+    <div class="card">
+    <img src="F:\cooding learning\DARAZ\light ring.jpg" class="card-img-top" alt="...">
+    <p>Ringlights & Studiolights</p>
+  </div>
+  </div>
+  <div class="col-1 card1 ">
+    <div class="card">
+    <img src="F:\cooding learning\DARAZ\body corss.jpg" class="card-img-top" alt="...">
+    <p>Cross Body &
+      Shoulders Bags
+    </p>
+  </div>
+  </div>
+  
+  
+  
+</div>
+
+
+
+
+
+<h4>flash sale</h4>
+<div class="flashrow1">
+  <div class="rol1">on sale now</div>
+  <div class="rol2">Ending in &nbsp;
+    <div class="time">10</div>&nbsp;:
+    <div class="time">55</div>&nbsp;:
+    <div class="time">35</div>
+  </div>
+  <div class="rol3">
+    <button class="btnflash">shop more</button>
+  </div>
+</div>
+
+
+
+
+<div class="flashitem">
+  
+<div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+  <div class="sale-item " >
+    <img src= "F:\cooding learning\DARAZ\for1.webp"   alt="" style="width: 100%; height: 185px;">
+    <p class="name">Airpods double and airpod_wireless...<br>
+      <span class="price">Rs.50</span><br>
+<span class="stline"><strike class="strike">Rs.4000</strike> -99% </span>
+    </p>
+   
+  
+  </div>
+</div>
+<div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+  <div class="sale-item " >
+    <img src= "F:\cooding learning\DARAZ\sale2.jpg"  alt="" style="width: 100%; height: 185px;">
+    <p class="name">M10 & TWA airpod_ with super.... <br>
+      <span class="price">Rs.110</span><br>
+<span class="stline"><strike class="strike">Rs.3000</strike> -98% </span>
+    </p>
+   
+  
+  </div>
+</div>
+<div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+  <div class="sale-item " >
+    <img src= "F:\cooding learning\DARAZ\sale3.jpg"  alt="" style="width: 100%; height: 185px;">
+    <p class="name">TWS 112 & i7s Airpods with super sound <br>
+      <span class="price">Rs.299</span><br>
+<span class="stline"><strike class="strike">Rs.2500</strike> -95% </span>
+    </p>
+   
+  
+  </div>
+</div>
+<div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+  <div class="sale-item " >
+    <img src= "F:\cooding learning\DARAZ\sale5.png"   alt="" style="width: 100%; height: 185px;">
+    <p class="name">orignal p47 headphones wireless earbuds invisi...<br>
+      <span class="price">Rs.490</span><br>
+<span class="stline"><strike class="strike">Rs.4500</strike> -98% </span>
+    </p>
+   
+  
+  </div>
+</div>
+<div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+  <div class="sale-item " >
+    <img src= "F:\cooding learning\DARAZ\sale5.jpg"   alt="" style="width: 100%; height: 185px;">
+    <p class="name">beatious 5in1 superskin glowing serum | 5%... <br>
+      <span class="price">Rs.599</span><br>
+<span class="stline"><strike class="strike">Rs.900</strike> -8% </span>
+    </p>
+   
+  
+  </div>
+</div>
+<div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+  <div class="sale-item " >
+    <img src= "F:\cooding learning\DARAZ\sale7.jpg"  alt="" style="width: 100%; height: 185px;">
+    <p class="name">LED seashells light garland battery-oprated... <br>
+      <span class="price">Rs.799</span><br>
+<span class="stline"><strike class="strike">Rs.2634</strike> -73% </span>
+    </p>
+   
+  
+  </div>
+</div>
+
+</div>
+
+<h4 style="margin-top: 350px;">only for you</h4>
+
+
+
+<div class="foryou">
+  
+  <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+    <div class="sale-item1 " >
+      <img src= "F:\cooding learning\DARAZ\newshiryt.webp"   alt="" style="width: 100%; height: 185px;">
+      <p class="name">zig zag men printed summer tracksuit..<br>
+        <span class="price">Rs.399</span><br>
+  <span class="stline"><strike class="strike">Rs.1000</strike> -78% </span>
+     <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+      </span>
+      </p>
+     
+    
+    </div>
+  </div>
+  <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+    <div class="sale-item1 " >
+      <img src= "F:\cooding learning\DARAZ\air21.webp"  alt="" style="width: 100%; height: 185px;">
+      <p class="name">air 31 earbud ncc cystal earbuds. <br>
+        <span class="price">Rs.778</span><br>
+  <span class="stline"><strike class="strike">Rs.3500</strike> -68% </span>
+     <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+      </span>
+      </p>
+     
+    
+    </div>
+  </div>
+  <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+    <div class="sale-item1 " >
+      <img src= "F:\cooding learning\DARAZ\jucier.webp"   alt="" style="width: 100%; height: 185px;">
+      <p class="name">usb rechargeable jucier blender.. <br>
+        <span class="price">Rs.50</span><br>
+  <span class="stline"><strike class="strike">Rs.1000</strike> -99% </span>
+     <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+      </span>
+      </p>
+     
+    
+    </div>
+  </div>
+  <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+    <div class="sale-item1 " >
+      <img src= "F:\cooding learning\DARAZ\mobilrponch.jpg"   alt="" style="width: 100%; height: 185px;">
+      <p class="name">mobile phone dust plug five pointed star.... <br>
+        <span class="price">Rs.99</span><br>
+  <span class="stline"><strike class="strike">Rs.300</strike> -40% </span>
+     <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+      </span>
+      </p>
+     
+    
+    </div>
+  </div>
+  <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+    <div class="sale-item1 " >
+      <img src= "F:\cooding learning\DARAZ\derma.webp"  alt="" style="width: 100%; height: 185px;">
+      <p class="name">derma roller 0.5 mm hair & skin system <br>
+        <span class="price">Rs.40</span><br>
+  <span class="stline"><strike class="strike">Rs.500</strike> -58% </span>
+     <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+      </span>
+      </p>
+     
+    
+    </div>
+  </div>
+  <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+    <div class="sale-item1 " >
+      <img src= "F:\cooding learning\DARAZ\uor.webp"  alt="" style="width: 100%; height: 185px;">
+      <p class="name">new desion cotton cystal bed sheet <br>
+        <span class="price">Rs.199</span><br>
+  <span class="stline"><strike class="strike">Rs.1000</strike> -88% </span>
+   <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+      </span>
+      </p>
+     
+    
+    </div>
+  </div>
+
+  </div>
+  
+
+
+
+
+<div class="foryou">
+  
+  <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+    <div class="sale-item1 " >
+      <img src= "F:\cooding learning\DARAZ\box.jpg"   alt="" style="width: 100%; height: 185px;">
+      <p class="name">pack of  3 box storage box carry box<br>
+        <span class="price">Rs.299</span><br>
+  <span class="stline"><strike class="strike">Rs.900</strike> -88% </span>
+     <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+      </span>
+      </p>
+     
+    
+    </div>
+  </div>
+  <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+    <div class="sale-item1 " >
+      <img src= "F:\cooding learning\DARAZ\friddge.webp"   alt="" style="width: 100%; height: 185px;">
+      <p class="name">fridge dust cover waterproof refrigenrater.. <br>
+        <span class="price">Rs.1999</span><br>
+  <span class="stline"><strike class="strike">Rs.5600</strike> -70% </span>
+     <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+      </span>
+      </p>
+     
+    
+    </div>
+  </div>
+  <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+    <div class="sale-item1 " >
+      <img src="F:\cooding learning\DARAZ\hierdyrer.webp"   alt="" style="width: 100%; height: 185px;">
+      <p class="name">quick dry hair cap turban wrap towel hat hair drying <br>
+        <span class="price">Rs.80</span><br>
+  <span class="stline"><strike class="strike">Rs.400</strike> -91% </span>
+     <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+      </span>
+      </p>
+     
+    
+    </div>
+  </div>
+  <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+    <div class="sale-item1 " >
+      <img src= "F:\cooding learning\DARAZ\blackghari.jpg"  alt="" style="width: 100%; height: 185px;">
+      <p class="name">top brande fashion  minimalist ultra thin <br>
+        <span class="price">Rs.599</span><br>
+  <span class="stline"><strike class="strike">Rs.2000</strike> -78% </span>
+     <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+      </span>
+      </p>
+     
+    
+    </div>
+  </div>
+  <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+    <div class="sale-item1 " >
+      <img src= "F:\cooding learning\DARAZ\perfume.webp"  alt="" style="width: 100%; height: 185px;">
+      <p class="name">SHERICE 5ml perfume atomixer spray <br>
+        <span class="price">Rs.30</span><br>
+  <span class="stline"><strike class="strike">Rs.500</strike> -68% </span>
+     <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+      </span>
+      </p>
+     
+    
+    </div>
+  </div>
+  <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+    <div class="sale-item1 " >
+      <img src= "F:\cooding learning\DARAZ\sliversteeel.webp"  alt="" style="width: 100%; height: 185px;">
+      <p class="name">new fashion sliver steel lartkan bangles set<br>
+        <span class="price">Rs.360</span><br>
+  <span class="stline"><strike class="strike">Rs.500</strike> -38% </span>
+   <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+      </span>
+      </p>
+     
+    
+    </div>
+  </div>
+
+  </div>
+  
+
+
+
+
+
+<div class="foryou">
+  
+  <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+    <div class="sale-item1 " >
+      <img src= "F:\cooding learning\DARAZ\you1.webp"   alt="" style="width: 100%; height: 185px;">
+      <p class="name">the boy shirt printed with half sleever<br>
+        <span class="price">Rs.150</span><br>
+  <span class="stline"><strike class="strike">Rs.1000</strike> -98% </span>
+     <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+      </span>
+      </p>
+     
+    
+    </div>
+  </div>
+  <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+    <div class="sale-item1 " >
+      <img src= "F:\cooding learning\DARAZ\waterbottle.jpg"   alt="" style="width: 100%; height: 185px;">
+      <p class="name">2000ml large capacity sport water bottle<br>
+        <span class="price">Rs.1,705</span><br>
+  <span class="stline"><strike class="strike">Rs.4040</strike> -58% </span>
+     <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+      </span>
+      </p>
+     
+    
+    </div>
+  </div>
+  <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+    <div class="sale-item1 " >
+      <img src= "F:\cooding learning\DARAZ\walclock.webp"   alt="" style="width: 100%; height: 185px;">
+      <p class="name">evento wall clock 3d 24 inch wooden watch  <br>
+        <span class="price">Rs.299</span><br>
+  <span class="stline"><strike class="strike">Rs.900</strike> -78% </span>
+     <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+      </span>
+      </p>
+     
+    
+    </div>
+  </div>
+  <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+    <div class="sale-item1 " >
+      <img src= "F:\cooding learning\DARAZ\ring.webp"  alt="" style="width: 100%; height: 185px;">
+      <p class="name">turkish stylish stone ring turkish design <br>
+        <span class="price">Rs.60</span><br>
+  <span class="stline"><strike class="strike">Rs.1000</strike> -78% </span>
+     <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+      </span>
+      </p>
+     
+    
+    </div>
+  </div>
+  <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+    <div class="sale-item1 " >
+      <img src="F:\cooding learning\DARAZ\watch.webp"  alt="" style="width: 100%; height: 185px;">
+      <p class="name">t10 ultra smart watch with good quality streps <br>
+        <span class="price">Rs.890</span><br>
+  <span class="stline"><strike class="strike">Rs.2000</strike> -38% </span>
+     <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+      </span>
+      </p>
+     
+    
+    </div>
+  </div>
+  <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+    <div class="sale-item1 " >
+      <img src= "F:\cooding learning\DARAZ\show.jpg"  alt="" style="width: 100%; height: 185px;">
+      <p class="name">12 color all sizes 21-36 childern shoew<br>
+        <span class="price">Rs.179</span><br>
+  <span class="stline"><strike class="strike">Rs.1000</strike> -78% </span>
+   <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+      </span>
+      </p>
+     
+    
+    </div>
+  </div>
+
+  </div>
+  
+
+
+
+
+
+<div class="foryou">
+  
+  <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+    <div class="sale-item1 " >
+      <img src="F:\cooding learning\DARAZ\you7.webp"  alt="" style="width: 100%; height: 185px;">
+      <p class="name">rechargeable dancing and singing castus tou <br>
+        <span class="price">Rs.1000</span><br>
+  <span class="stline"><strike class="strike">Rs.2000</strike> -50% </span>
+     <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+      </span>
+      </p>
+     
+    
+    </div>
+  </div>
+  <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+    <div class="sale-item1 " >
+      <img src= "F:\cooding learning\DARAZ\airphone.webp"  alt="" style="width: 100%; height: 185px;">
+      <p class="name">zayraz p9 wirless blutooth headphones <br>
+        <span class="price">Rs.199</span><br>
+  <span class="stline"><strike class="strike">Rs.2000</strike> -88% </span>
+     <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+      </span>
+      </p>
+     
+    
+    </div>
+  </div>
+  <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+    <div class="sale-item1 " >
+      <img src= "F:\cooding learning\DARAZ\you4.webp"   alt="" style="width: 100%; height: 185px;">
+      <p class="name">orignal product+free shipping code <br>
+        <span class="price">Rs.500</span><br>
+  <span class="stline"><strike class="strike">Rs.4000</strike> -78% </span>
+     <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+      </span>
+      </p>
+     
+    
+    </div>
+  </div>
+  <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+    <div class="sale-item1 " >
+      <img src= "F:\cooding learning\DARAZ\watchuoy.jpg"  alt="" style="width: 100%; height: 185px;">
+      <p class="name"> nylcon strap fr apple watch ultra 2 brand 49mm<br>
+        <span class="price">Rs.50</span><br>
+  <span class="stline"><strike class="strike">Rs.400</strike> -78% </span>
+     <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+      </span>
+      </p>
+     
+    
+    </div>
+  </div>
+  <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+    <div class="sale-item1 " >
+      <img src= "F:\cooding learning\DARAZ\you5.webp"  alt="" style="width: 100%; height: 185px;">
+      <p class="name">code orignal ready stock lenevo earbuds.. <br>
+        <span class="price">Rs.5</span><br>
+  <span class="stline"><strike class="strike">Rs.1000</strike> -78% </span>
+     <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+      </span>
+      </p>
+     
+    
+    </div>
+  </div>
+  <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+    <div class="sale-item1 " >
+      <img src= "F:\cooding learning\DARAZ\markhor.webp"  alt="" style="width: 100%; height: 185px;">
+      <p class="name">mrkhor printed fleece winter tracsuit hoodies... <br>
+        <span class="price">Rs.599</span><br>
+  <span class="stline"><strike class="strike">Rs.1000</strike> -28% </span>
+   <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+      </span>
+      </p>
+     
+    
+    </div>
+  </div>
+
+  </div>
+  
+
+
+  <div class="foryou">
+  
+    <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+      <div class="sale-item1 " >
+        <img src="F:\cooding learning\DARAZ\new.webp"  alt="" style="width: 100%; height: 185px;">
+        <p class="name">casual fashion wirt watch chain straps men <br>
+          <span class="price">Rs.1099</span><br>
+    <span class="stline"><strike class="strike">Rs.4000</strike> -70% </span>
+       <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+        </span>
+        </p>
+       
+      
+      </div>
+    </div>
+    <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+      <div class="sale-item1 " >
+        <img src= "F:\cooding learning\DARAZ\odia.jpeg" alt="" style="width: 100%; height: 185px;">
+        <p class="name">audionic ad 7000 plus 2.2 multimedia <br>
+          <span class="price">Rs.199</span><br>
+    <span class="stline"><strike class="strike">Rs.2000</strike> -88% </span>
+       <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+        </span>
+        </p>
+       
+      
+      </div>
+    </div>
+    <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+      <div class="sale-item1 " >
+        <img src= "F:\cooding learning\DARAZ\sofa.webp"   alt="" style="width: 100%; height: 185px;">
+        <p class="name">3 seater sofa cover washable with hand <br>
+          <span class="price">Rs.500</span><br>
+    <span class="stline"><strike class="strike">Rs.1000</strike> -50% </span>
+       <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+        </span>
+        </p>
+       
+      
+      </div>
+    </div>
+    <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+      <div class="sale-item1 " >
+        <img src= "F:\cooding learning\DARAZ\remote.webp" alt="" style="width: 100%; height: 185px;">
+        <p class="name"> UCOM 709 pc dual shock gaming joysktik<br>
+          <span class="price">Rs.1090</span><br>
+    <span class="stline"><strike class="strike">Rs.4000</strike> -78% </span>
+       <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+        </span>
+        </p>
+       
+      
+      </div>
+    </div>
+    <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+      <div class="sale-item1 " >
+        <img src= "F:\cooding learning\DARAZ\winter.jpeg"  alt="" style="width: 100%; height: 185px;">
+        <p class="name"> high neck for men and boy winter... <br>
+          <span class="price">Rs.59</span><br>
+    <span class="stline"><strike class="strike">Rs.1000</strike> -78% </span>
+       <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+        </span>
+        </p>
+       
+      
+      </div>
+    </div>
+    <div class="col-2 " style="margin-top: 1px; background-color: #ffffff;"> 
+      <div class="sale-item1 " >
+        <img src= "F:\cooding learning\DARAZ\p9.webp"   alt="" style="width: 100%; height: 185px;">
+        <p class="name">p9 wireless blutooth headphone with mic noive.. <br>
+          <span class="price">Rs.299</span><br>
+    <span class="stline"><strike class="strike">Rs.2099</strike> -93% </span>
+     <br>  <span class="star" > &#9733; &#9733; &#9733; &#9733; <span style="color:#DADADA">&#9733; <span style="color: #A4A1A1;">(15007)</span></span>
+        </span>
+        </p>
+       
+      
+      </div>
+    </div>
+  
+    </div>
+    
+
+
+
+
+
+
+
+
+<button class="btnlast">Load More</button>
+
+<div class="secondlast">
+  <div class="secondlast1 sl">
+    <h5>customer care</h5>
+    <pre>
+ help center
+ how to buy
+ corrporate & bulk purchacing
+ return & refunds
+ daraz shop
+ contect us
+ purchase protection
+ daraz pickup points
+    </pre>
+   
+    
+    <h5>make money with us</h5>
+    <pre>  
+ daraz university
+ sell on daraz
+ join daraz affiliate program
+    </pre>
+   
+    
+  </div>
+  <div class="secondlast2 sl">
+    <h5>daraz</h5><pre>
+ about us
+ digital payment
+ daraz donates
+ daraz booig
+ term & conditions
+ provacy & policy
+ NTS-number : 4012118-6
+ STRN number : 1700401211018
+ online shopping app
+ online groceries shopping
+ daraz exculsive
+    
+    </pre>
+    
+  
+  </div>
+  <div class="secondlast3 sl">
+    <h5>daraz international</h5>
+<img src="C:\Users\AMMAR\Pictures\Screenshots\Screenshot 2024-07-21 152604.png" alt="" >
+    <h5 style="margin-top: 20px;">payment meothed</h5>
+<img src="C:\Users\AMMAR\Pictures\Screenshots\Screenshot 2024-07-21 153054.png" alt=""><br>
+<h5  style="margin-top: 20px;">verified by</h5>
+<img src="C:\Users\AMMAR\Pictures\Screenshots\Screenshot 2024-07-21 153122.png" alt="">
+</div>
+  <div class="secondlast4 sl">
+    <h5>exclusive deals & offer! </h5>
+    <img src="C:\Users\AMMAR\Pictures\Screenshots\Screenshot 2024-07-21 152733.png" alt="">
+    <h5 style="margin-top: 20px;">follow us</h5>
+    <img src="C:\Users\AMMAR\Pictures\Screenshots\Screenshot 2024-07-21 153032.png" alt="">
+  </div>
+</div>
+
+<div class="last">
+  <div class="para para1">
+    <img src="C:\Users\AMMAR\Pictures\Screenshots\first.png" alt="">
+    <img src="C:\Users\AMMAR\Pictures\Screenshots\second.png" alt="">
+  </div>
+  <div class="para">
+    <img src="C:\Users\AMMAR\Pictures\Screenshots\third.png" alt="">
+    <img src="C:\Users\AMMAR\Pictures\Screenshots\forth.png" alt="">
+  </div>
+  <div class="para">
+    <img src="C:\Users\AMMAR\Pictures\Screenshots\fifth.png" alt="">
+    <img src="C:\Users\AMMAR\Pictures\Screenshots\6th.png" alt="">
+  </div>
+  <div class="para">
+    <img src="C:\Users\AMMAR\Pictures\Screenshots\7th.png" alt="">
+    <img src="C:\Users\AMMAR\Pictures\Screenshots\last.png"alt="">
+  </div>
+</div>
+</div>
+</div>
+<button class="massage"><i class="fa-solid fa-message "></i> message</button>
+</body>
+</html>
